@@ -53,7 +53,7 @@ const Pastries = () => {
         description: 'Traditional French croissant with rich butter', 
         price: 89, 
         rating: 4.8, 
-        image: '/images/products/croissants/butter croissant.jpg'
+        image: 'public/images/products/croissants/butter croissant.jpg'
       },
       { 
         name: 'Chocolate Croissant', 
