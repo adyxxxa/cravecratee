@@ -95,40 +95,40 @@ const Pastries = () => {
         description: 'Rich chocolate cake with fudge frosting', 
         price: 1200, 
         rating: 4.9, 
-        image: '/images/products/cakes/chocolate fudge.jpg',
-        fallbackImage: '/images/products/cakes/chocolate fudge.jpg'
+        image: '/images/products/cakes/chocolate-fudge.jpg',
+        fallbackImage: '/images/products/cakes/chocolate-fudge.jpg'
       },
       { 
         name: 'Vanilla Bean Cake', 
         description: 'Classic vanilla cake with real vanilla beans', 
         price: 1100, 
         rating: 4.7, 
-        image: '/images/products/cakes/vanilla bean.jpg',
-        fallbackImage: '/images/products/cakes/vanilla bean.jpg'
+        image: '/images/products/cakes/vanilla-bean.jpg',
+        fallbackImage: '/images/products/cakes/vanilla-bean.jpg'
       },
       { 
         name: 'Red Velvet Cake', 
         description: 'Southern classic with cream cheese frosting', 
         price: 1300, 
         rating: 4.8, 
-        image: '/images/products/cakes/red velveet.jpg',
-        fallbackImage: '/images/products/cakes/red velveet.jpg'
+        image: '/images/products/cakes/red-velvet.jpg',
+        fallbackImage: '/images/products/cakes/red-velvet.jpg'
       },
       { 
         name: 'Lemon Blueberry Cake', 
         description: 'Zesty lemon cake with fresh blueberries', 
         price: 1150, 
         rating: 4.6, 
-        image: '/images/products/cakes/lemon blueberry.jpg',
-        fallbackImage: '/images/products/cakes/lemon blueberry.jpg'
+        image: '/images/products/cakes/lemon-blueberry.jpg',
+        fallbackImage: '/images/products/cakes/lemon-blueberry.jpg'
       },
       { 
         name: 'Carrot Cake', 
         description: 'Spiced carrot cake with cream cheese frosting', 
         price: 1250, 
         rating: 4.8, 
-        image: '/images/products/cakes/carrot cake.jpg',
-        fallbackImage: '/images/products/cakes/carrot cake.jpg'
+        image: '/images/products/cakes/carrot-cake.jpg',
+        fallbackImage: '/images/products/cakes/carrot-cake.jpg'
       }
     ],
     'Seasonal Pies': [
