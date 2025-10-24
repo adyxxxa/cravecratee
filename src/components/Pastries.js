@@ -53,7 +53,7 @@ const Pastries = () => {
         description: 'Traditional French croissant with rich butter', 
         price: 89, 
         rating: 4.8, 
-        image: 'public/images/products/croissants/butter croissant.jpg'
+        image: '/images/products/croissants/butter croissant.jpg'
       },
       { 
         name: 'Chocolate Croissant', 
@@ -278,7 +278,7 @@ const Pastries = () => {
   };
 
   return (
-    <section className="pastries-section">
+    <section className="pastries-section" id="pastries">
       <div className="container">
         <h2 className="section-title">Our Artisanal Pastries</h2>
         <p className="section-subtitle">Handcrafted with love, delivered with care</p>

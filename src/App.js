@@ -36,6 +36,25 @@ function App() {
     setOrderDetails(null);
   };
 
+  const handleFloatingShopClick = () => {
+    if (currentPage === 'home') {
+      // Scroll to shop section
+      const element = document.getElementById('pastries');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate back to home and then scroll to shop
+      setCurrentPage('home');
+      setTimeout(() => {
+        const element = document.getElementById('pastries');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  };
+
   const renderPage = () => {
     switch (currentPage) {
       case 'checkout':
@@ -74,6 +93,41 @@ function App() {
         {renderPage()}
         <Footer />
         <CartModal onNavigateToCheckout={handleNavigateToCheckout} />
+        
+        {/* Floating Action Button */}
+        <button
+          onClick={handleFloatingShopClick}
+          style={{
+            position: 'fixed',
+            bottom: '24px',
+            right: '24px',
+            backgroundColor: '#f59e0b',
+            color: 'white',
+            border: 'none',
+            borderRadius: '50%',
+            width: '60px',
+            height: '60px',
+            fontSize: '24px',
+            cursor: 'pointer',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+            zIndex: 1000,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.3s ease'
+          }}
+          onMouseEnter={(e) => {
+            e.target.style.transform = 'scale(1.1)';
+            e.target.style.backgroundColor = '#d97706';
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.transform = 'scale(1)';
+            e.target.style.backgroundColor = '#f59e0b';
+          }}
+          title="Go to Shop"
+        >
+          🛍️
+        </button>
       </div>
     </CartProvider>
   );
