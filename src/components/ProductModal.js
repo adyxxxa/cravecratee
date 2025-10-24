@@ -63,12 +63,7 @@ const ProductModal = ({ isOpen, onClose, category, products }) => {
                     src={product.image || product.fallbackImage} 
                     alt={product.name}
                     className="product-photo"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'block';
-                    }}
                   />
-                  <span className="product-icon" style={{display: 'none'}}>{product.icon}</span>
                   <button 
                     className="wishlist-btn"
                     onClick={() => addToWishlist(product)}

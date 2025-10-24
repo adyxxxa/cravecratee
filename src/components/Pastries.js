@@ -53,7 +53,6 @@ const Pastries = () => {
         description: 'Traditional French croissant with rich butter', 
         price: 89, 
         rating: 4.8, 
-        icon: '🥐',
         image: '/images/products/croissants/butter croissant.jpg',
         fallbackImage: '/images/products/croissants/butter croissant.jpg'
       },
@@ -62,7 +61,6 @@ const Pastries = () => {
         description: 'Flaky pastry filled with premium chocolate', 
         price: 99, 
         rating: 4.9, 
-        icon: '🍫',
         image: '/images/products/croissants/chocolate croissant.jpg',
         fallbackImage: '/images/products/croissants/chocolate croissant.jpg'
       },
@@ -71,7 +69,6 @@ const Pastries = () => {
         description: 'Buttery croissant topped with almonds and sugar', 
         price: 109, 
         rating: 4.7, 
-        icon: '🥐',
         image: '/images/products/croissants/almond croissant.jpg',
         fallbackImage: '/images/products/croissants/almond croissant.jpg'
       },
@@ -80,7 +77,6 @@ const Pastries = () => {
         description: 'Savory croissant with ham and Swiss cheese', 
         price: 119, 
         rating: 4.6, 
-        icon: '🥐',
         image: '/images/products/croissants/ham and cheese.jpg',
         fallbackImage: '/images/products/croissants/ham and cheese.jpg'
       },
@@ -89,7 +85,6 @@ const Pastries = () => {
         description: 'Sweet croissant with cinnamon sugar glaze', 
         price: 95, 
         rating: 4.8, 
-        icon: '🥐',
         image: '/images/products/croissants/cinammon croissant.jpg',
         fallbackImage: '/images/products/croissants/cinammon croissant.jpg'
       }
@@ -100,7 +95,6 @@ const Pastries = () => {
         description: 'Rich chocolate cake with fudge frosting', 
         price: 1200, 
         rating: 4.9, 
-        icon: '🎂',
         image: '/images/products/cakes/chocolate fudge.jpg',
         fallbackImage: '/images/products/cakes/chocolate fudge.jpg'
       },
@@ -109,7 +103,6 @@ const Pastries = () => {
         description: 'Classic vanilla cake with real vanilla beans', 
         price: 1100, 
         rating: 4.7, 
-        icon: '🎂',
         image: '/images/products/cakes/vanilla bean.jpg',
         fallbackImage: '/images/products/cakes/vanilla bean.jpg'
       },
@@ -118,7 +111,6 @@ const Pastries = () => {
         description: 'Southern classic with cream cheese frosting', 
         price: 1300, 
         rating: 4.8, 
-        icon: '🎂',
         image: '/images/products/cakes/red velveet.jpg',
         fallbackImage: '/images/products/cakes/red velveet.jpg'
       },
@@ -127,7 +119,6 @@ const Pastries = () => {
         description: 'Zesty lemon cake with fresh blueberries', 
         price: 1150, 
         rating: 4.6, 
-        icon: '🎂',
         image: '/images/products/cakes/lemon blueberry.jpg',
         fallbackImage: '/images/products/cakes/lemon blueberry.jpg'
       },
@@ -136,7 +127,6 @@ const Pastries = () => {
         description: 'Spiced carrot cake with cream cheese frosting', 
         price: 1250, 
         rating: 4.8, 
-        icon: '🎂',
         image: '/images/products/cakes/carrot cake.jpg',
         fallbackImage: '/images/products/cakes/carrot cake.jpg'
       }
@@ -147,7 +137,6 @@ const Pastries = () => {
         description: 'Classic apple pie with cinnamon and nutmeg', 
         price: 750, 
         rating: 4.8, 
-        icon: '🥧',
         image: '/images/products/pies/apple pie.png',
         fallbackImage: '/images/products/pies/apple pie.png'
       },
@@ -156,7 +145,6 @@ const Pastries = () => {
         description: 'Sweet cherry pie with lattice crust', 
         price: 800, 
         rating: 4.7, 
-        icon: '🥧',
         image: '/images/products/pies/cherry pie.png',
         fallbackImage: '/images/products/pies/cherry pie.png'
       },
@@ -165,7 +153,6 @@ const Pastries = () => {
         description: 'Traditional pumpkin pie with whipped cream', 
         price: 700, 
         rating: 4.9, 
-        icon: '🥧',
         image: '/images/products/pies/pumpkin pie.png',
         fallbackImage: '/images/products/pies/pumpkin pie.png'
       },
@@ -174,7 +161,6 @@ const Pastries = () => {
         description: 'Fresh blueberry pie with crumb topping', 
         price: 850, 
         rating: 4.6, 
-        icon: '🥧',
         image: '/images/products/pies/blueberry pie.jpg',
         fallbackImage: '/images/products/pies/blueberry pie.jpg'
       },
@@ -183,7 +169,6 @@ const Pastries = () => {
         description: 'Summer peach pie with vanilla ice cream', 
         price: 900, 
         rating: 4.8, 
-        icon: '🥧',
         image: '/images/products/pies/peach pie.jpg',
         fallbackImage: '/images/products/pies/peach pie.jpg'
       }
@@ -194,7 +179,6 @@ const Pastries = () => {
         description: 'Classic cookie with premium chocolate chips', 
         price: 45, 
         rating: 4.8, 
-        icon: '🍪',
         image: '/images/products/cookies/classic-chocolate-chip-cookies.jpg',
         fallbackImage: '/images/products/cookies/classic-chocolate-chip-cookies.jpg'
       },
@@ -203,7 +187,6 @@ const Pastries = () => {
         description: 'Rich chocolate cookie with chocolate chunks', 
         price: 55, 
         rating: 4.9, 
-        icon: '🍪',
         image: '/images/products/cookies/double chocolate cookies.png',
         fallbackImage: '/images/products/cookies/double chocolate cookies.png'
       },
@@ -212,7 +195,6 @@ const Pastries = () => {
         description: 'Hearty oatmeal cookie with plump raisins', 
         price: 50, 
         rating: 4.6, 
-        icon: '🍪',
         image: '/images/products/cookies/oatmeal raisin cookie.jpg',
         fallbackImage: '/images/products/cookies/oatmeal raisin cookie.jpg'
       },
@@ -221,7 +203,6 @@ const Pastries = () => {
         description: 'Cinnamon sugar cookie with soft center', 
         price: 45, 
         rating: 4.7, 
-        icon: '🍪',
         image: '/images/products/cookies/snickerdoodle.jpg',
         fallbackImage: '/images/products/cookies/snickerdoodle.jpg'
       },
@@ -230,7 +211,6 @@ const Pastries = () => {
         description: 'Buttery cookie with white chocolate and nuts', 
         price: 65, 
         rating: 4.8, 
-        icon: '🍪',
         image: '/images/products/cookies/white-chocolate-macadamia-nut-cookies-1.jpg',
         fallbackImage: '/images/products/cookies/white-chocolate-macadamia-nut-cookies-1.jpg'
       }
@@ -241,7 +221,6 @@ const Pastries = () => {
         description: 'Classic vanilla cupcake with buttercream', 
         price: 75, 
         rating: 4.7, 
-        icon: '🧁',
         image: '/images/products/cupcakes/vanilla cupcake.jpg',
         fallbackImage: '/images/products/cupcakes/vanilla cupcake.jpg'
       },
@@ -250,7 +229,6 @@ const Pastries = () => {
         description: 'Rich chocolate cupcake with chocolate frosting', 
         price: 85, 
         rating: 4.8, 
-        icon: '🧁',
         image: '/images/products/cupcakes/chocolate cupcake.jpg',
         fallbackImage: '/images/products/cupcakes/chocolate cupcake.jpg'
       },
@@ -259,7 +237,6 @@ const Pastries = () => {
         description: 'Southern classic with cream cheese frosting', 
         price: 95, 
         rating: 4.9, 
-        icon: '🧁',
         image: '/images/products/cupcakes/redvleveet cupcake.jpg',
         fallbackImage: '/images/products/cupcakes/redvleveet cupcake.jpg'
       },
@@ -268,7 +245,6 @@ const Pastries = () => {
         description: 'Fresh strawberry cupcake with pink frosting', 
         price: 85, 
         rating: 4.6, 
-        icon: '🧁',
         image: '/images/products/cupcakes/strawberry cupcake.jpg',
         fallbackImage: '/images/products/cupcakes/strawberry cupcake.jpg'
       },
@@ -277,7 +253,6 @@ const Pastries = () => {
         description: 'Spiced carrot cupcake with cream cheese frosting', 
         price: 95, 
         rating: 4.8, 
-        icon: '🧁',
         image: '/images/products/cupcakes/carrot cupcake.jpg',
         fallbackImage: '/images/products/cupcakes/carrot cupcake.jpg'
       }
@@ -288,7 +263,6 @@ const Pastries = () => {
         description: 'Traditional sourdough with tangy flavor', 
         price: 280, 
         rating: 4.8, 
-        icon: '🍞',
         image: '/images/products/breads/sourdough.jpg',
         fallbackImage: '/images/products/breads/sourdough.jpg'
       },
@@ -297,7 +271,6 @@ const Pastries = () => {
         description: 'Nutritious whole wheat bread', 
         price: 250, 
         rating: 4.6, 
-        icon: '🍞',
         image: '/images/products/breads/whole wheat bread.jpg',
         fallbackImage: '/images/products/breads/whole wheat bread.jpg'
       },
@@ -306,7 +279,6 @@ const Pastries = () => {
         description: 'Crispy French baguette with soft interior', 
         price: 180, 
         rating: 4.9, 
-        icon: '🥖',
         image: '/images/products/breads/french baguette.jpg',
         fallbackImage: '/images/products/breads/french baguette.jpg'
       },
@@ -315,7 +287,6 @@ const Pastries = () => {
         description: 'Sweet bread with cinnamon and raisins', 
         price: 300, 
         rating: 4.7, 
-        icon: '🍞',
         image: '/images/products/breads/cinnamon raisin bread.jpg',
         fallbackImage: '/images/products/breads/cinnamon raisin bread.jpg'
       },
@@ -324,7 +295,6 @@ const Pastries = () => {
         description: 'Hearty multigrain bread with seeds', 
         price: 290, 
         rating: 4.8, 
-        icon: '🍞',
         image: '/images/products/breads/multigrain bread.jpg',
         fallbackImage: '/images/products/breads/multigrain bread.jpg'
       }
