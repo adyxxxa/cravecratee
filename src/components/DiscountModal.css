@@ -1,0 +1,210 @@
+.discount-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.discount-modal-content {
+  background-color: white;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.discount-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e8e0d6;
+  background-color: #faf8f5;
+  border-radius: 12px 12px 0 0;
+}
+
+.discount-modal-header h2 {
+  color: #3d2914;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #3d2914;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #e8e0d6;
+}
+
+.discount-modal-body {
+  padding: 2rem;
+}
+
+.discount-input-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.discount-input {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #d4c4a8;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+  color: #3d2914;
+}
+
+.discount-input:focus {
+  outline: none;
+  border-color: #3d2914;
+}
+
+.discount-input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.apply-discount-btn {
+  background-color: #3d2914;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.apply-discount-btn:hover:not(:disabled) {
+  background-color: #2d1f0f;
+}
+
+.apply-discount-btn:disabled {
+  background-color: #8b4513;
+  cursor: not-allowed;
+}
+
+.discount-message {
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.discount-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.discount-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.available-codes {
+  background-color: #f5f1eb;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.available-codes h3 {
+  color: #3d2914;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.codes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.code-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #e8e0d6;
+}
+
+.code {
+  font-weight: bold;
+  color: #3d2914;
+  font-family: monospace;
+  background-color: #f0ebe5;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+}
+
+.description {
+  color: #8b4513;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .discount-modal-overlay {
+    padding: 1rem;
+  }
+  
+  .discount-modal-content {
+    max-height: 95vh;
+  }
+  
+  .discount-modal-header {
+    padding: 1rem 1.5rem;
+  }
+  
+  .discount-modal-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .discount-modal-body {
+    padding: 1.5rem;
+  }
+  
+  .discount-input-group {
+    flex-direction: column;
+  }
+  
+  .apply-discount-btn {
+    width: 100%;
+  }
+  
+  .code-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

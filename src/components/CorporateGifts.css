@@ -1,0 +1,311 @@
+.corporate-gifts-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.corporate-gifts-content {
+  background-color: white;
+  border-radius: 12px;
+  max-width: 1200px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.corporate-gifts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 1px solid #e8e0d6;
+  background-color: #faf8f5;
+  border-radius: 12px 12px 0 0;
+}
+
+.corporate-gifts-header h1 {
+  color: #3d2914;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #3d2914;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #e8e0d6;
+}
+
+.corporate-gifts-body {
+  padding: 2rem;
+}
+
+.features-section {
+  margin-bottom: 3rem;
+}
+
+.features-section h2 {
+  color: #3d2914;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background-color: #f5f1eb;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e8e0d6;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #3d2914;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #8b4513;
+  line-height: 1.5;
+}
+
+.packages-section {
+  margin-bottom: 3rem;
+}
+
+.packages-section h2 {
+  color: #3d2914;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.package-card {
+  background-color: white;
+  border: 2px solid #e8e0d6;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.package-card:hover {
+  border-color: #3d2914;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.package-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.package-card h3 {
+  color: #3d2914;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.package-price {
+  color: #28a745;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.package-description {
+  color: #8b4513;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.package-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.package-items li {
+  color: #3d2914;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.inquiry-section {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.inquiry-section h2 {
+  color: #3d2914;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.corporate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #3d2914;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.8rem;
+  border: 1px solid #d4c4a8;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+  color: #3d2914;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3d2914;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-message {
+  padding: 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.submit-btn {
+  background-color: #3d2914;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #2d1f0f;
+}
+
+.submit-btn:disabled {
+  background-color: #8b4513;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .corporate-gifts-overlay {
+    padding: 1rem;
+  }
+  
+  .corporate-gifts-content {
+    max-height: 95vh;
+  }
+  
+  .corporate-gifts-header {
+    padding: 1.5rem;
+  }
+  
+  .corporate-gifts-header h1 {
+    font-size: 2rem;
+  }
+  
+  .corporate-gifts-body {
+    padding: 1.5rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-grid,
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+}

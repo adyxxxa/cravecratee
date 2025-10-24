@@ -1,0 +1,120 @@
+.header {
+  background-color: #faf8f5;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e8e0d6;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #3d2914;
+  font-family: serif;
+  letter-spacing: 2px;
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #3d2914;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #8b4513;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wishlist-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.wishlist-icon:hover {
+  transform: scale(1.2);
+}
+
+.wishlist-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.discount-button {
+  background: transparent;
+  border: 1px solid #3d2914;
+  color: #3d2914;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.discount-button:hover {
+  background-color: #3d2914;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .navigation {
+    gap: 1rem;
+  }
+}

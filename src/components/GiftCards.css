@@ -1,0 +1,381 @@
+.gift-cards-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.gift-cards-content {
+  background-color: white;
+  border-radius: 12px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.gift-cards-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 1px solid #e8e0d6;
+  background-color: #faf8f5;
+  border-radius: 12px 12px 0 0;
+}
+
+.gift-cards-header h1 {
+  color: #3d2914;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #3d2914;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #e8e0d6;
+}
+
+.gift-cards-body {
+  padding: 2rem;
+}
+
+.features-section {
+  margin-bottom: 3rem;
+}
+
+.features-section h2 {
+  color: #3d2914;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background-color: #f5f1eb;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e8e0d6;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #3d2914;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #8b4513;
+  line-height: 1.5;
+}
+
+.purchase-section {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.purchase-section h2 {
+  color: #3d2914;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.gift-card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.amount-section h3,
+.recipient-section h3,
+.sender-section h3,
+.message-section h3,
+.delivery-section h3 {
+  color: #3d2914;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.amount-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.amount-card {
+  background-color: white;
+  border: 2px solid #e8e0d6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.amount-card:hover {
+  border-color: #3d2914;
+  transform: translateY(-2px);
+}
+
+.amount-card.selected {
+  border-color: #3d2914;
+  background-color: #f5f1eb;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.amount-card.popular {
+  border-color: #28a745;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.amount-display {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3d2914;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #3d2914;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem;
+  border: 1px solid #d4c4a8;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: white;
+  color: #3d2914;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3d2914;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group small {
+  color: #8b4513;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.order-summary {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e8e0d6;
+}
+
+.order-summary h3 {
+  color: #3d2914;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: #3d2914;
+}
+
+.summary-item.total {
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-top: 1px solid #e8e0d6;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.form-message {
+  padding: 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.purchase-btn {
+  background-color: #3d2914;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.purchase-btn:hover:not(:disabled) {
+  background-color: #2d1f0f;
+}
+
+.purchase-btn:disabled {
+  background-color: #8b4513;
+  cursor: not-allowed;
+}
+
+.terms-section {
+  background-color: #f5f1eb;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e8e0d6;
+}
+
+.terms-section h3 {
+  color: #3d2914;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.terms-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.terms-section li {
+  color: #8b4513;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.terms-section li::before {
+  content: '•';
+  color: #3d2914;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .gift-cards-overlay {
+    padding: 1rem;
+  }
+  
+  .gift-cards-content {
+    max-height: 95vh;
+  }
+  
+  .gift-cards-header {
+    padding: 1.5rem;
+  }
+  
+  .gift-cards-header h1 {
+    font-size: 2rem;
+  }
+  
+  .gift-cards-body {
+    padding: 1.5rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .amount-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

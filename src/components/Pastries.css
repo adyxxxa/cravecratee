@@ -1,0 +1,84 @@
+.pastries {
+  background-color: #faf8f5;
+  padding: 4rem 0;
+}
+
+.pastries-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.pastries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pastry-card {
+  background-color: #f5f1eb;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pastry-card:hover {
+  transform: translateY(-5px);
+}
+
+.pastry-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.pastry-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #3d2914;
+  margin-bottom: 1rem;
+}
+
+.pastry-description {
+  color: #8b4513;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.pastry-varieties {
+  color: #8b4513;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.view-products-btn {
+  background-color: #3d2914;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.view-products-btn:hover {
+  background-color: #2d1f0f;
+}
+
+@media (max-width: 768px) {
+  .pastries-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pastry-card {
+    padding: 1.5rem;
+  }
+}
